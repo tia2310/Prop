@@ -1,6 +1,16 @@
 # Prop 
+ Hand cricket game
+This is a simple game which works on random numbers. The player selects any number from 1-10. Computer generates a random number in the same range. If computer's number is same as the player's selected number, the player is out and game ends. Otherwise the player's number is added to his score.
 
-Hand Cricket is a very famous game among the school kids in India and similar countries. Traditionally, there are two players who will be playing the game, and after performing a ‘toss’, one chooses to bat and the other has to bowl. Both the players will (through hand gestures called ‘throws’) simultaneously signify a number between 1 to 10. If both the players point out the same number, the player who is batting gets ‘out’, else, this is repeated and whatever number the batting player (batsman) keeps throwing are added and that becomes his/her score.
-
-After the batsman gets out, the bowling player (bowler) becomes the batting player and vice-versa. Now, the process is repeated again and finally, if the original bowler scores more than the original batsman, he wins. If they both score the same runs and both get ‘out’, then it is declared as a tie. If the original batsman scores more than the original bowler, he wins. 
-
+## Explanation
+```java
+//bb is player's entered input
+rr=((Math.random())*10); //generate random number for computer
+rr=rr+1; //add 1 because random number starts with 0
+aa=(int)(rr); //convert to integer
+/**...**/
+ if(bb==aa) //game over condition
+                    {
+                        System.out.println(" ");
+                        System.out.println("HOWZATTT!!!!!!");
+                     }
